@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Umeed</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="jquery_min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script type="text/javascript">
+function validate(){
+	var e=query.eid.value;
+	if(e==""||e==null)
+		alert("Enter email id");
+	else if(!emval(e))
+		alert("Enter valid email id");
+	else
+	alert("Query Submitted!!!");
+}
+function emval(e)
+{
+	var epat=/^[a-zA-Z0-9_.]+@([a-zA-Z0-9]+.)+[a-zA-Z]{2,4}$/;
+	return epat.test(e);
+}
+
+</script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="index.html">Umeed</a></h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="dropdown"><a href="#" accesskey="1"  class="dropbtn" title="">Login</a>
+            	<div class="dropdown-content">
+      				<a href="admin.html">Admin</a>
+      				<a href="coord.html">Coordinator</a>
+      				<a href="volunteer.html">Volunteer</a>
+    			</div>
+            </li>
+			
+			<li class="dropdown"><a href="#" class="dropbtn" accesskey="2" title="">Registration</a>
+            	<div class="dropdown-content">
+      				<a href="radmin.html">Admin</a>
+      				<a href="rcoord.html">Coordinator</a>
+      				<a href="rvolunteer.html">Volunteer</a>
+    			</div>
+            
+            </li>
+			<li><a href="schools.html" accesskey="3" title="">Schools</a></li>
+			<li><a href="activities.html" accesskey="4" title="">Activities</a></li>
+            <li><a href="query.html" accesskey="3" title="">Query</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="banner" class="container">
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic01.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic04.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic05.jpg" alt="" /> </div>
+			</div>
+		</div>
+		<div class="indicator">
+			<ul>
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			reelSelector: '.viewer .reel',
+			slidesSelector: '.viewer .reel .slide',
+			advanceDelay: 3000,
+			speed: 'slow',
+			navPreviousSelector: '.previous-button',
+			navNextSelector: '.next-button',
+			indicatorSelector: '.indicator ul li',
+			slideLinkSelector: '.link'
+		});
+	</script> 
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div id="onecolumn">
+			<p>
+            	<span style="font-size:25px;">Umeed</span> &nbsp;is a national level development organisation directly benefitting over 400,000 children and their families every year, through 158 welfare projects on education, healthcare, livelihood and women empowerment, in more than 700 remote villages and slums across 25 states of India.
+
+<p> Education is both the means as well as the end to a better life: the means because it empowers an individual to earn his/her livelihood and the end because it increases one's awareness on a range of issues – from healthcare to appropriate social behaviour to understanding one's rights – and in the process help him/her evolve as a better citizen.
+
+<p>Doubtless, education is the most powerful catalyst for social transformation. But child education cannot be done in isolation. A child will go to school only if the family, particularly the mother, is assured of healthcare and empowered. Moreover, when an elder sibling is relevantly skilled to be employable and begins earning, the journey of empowerment continues beyond the present generation.
+
+<p>Realizing this, Umeed, beginning in the corridors of education, adopted a lifecycle approach of development, focusing its interventions on children, their families and the larger community.
+
+<p>Umeed believes that unless members of the civil society are involved proactively in the process of development, sustainable change will not happen. Following this model of Civic Driven Change, Umeed sensitizes and engages the civil society, making it an active partner in all its welfare initiatives.
+
+<p>Today, 8 million children in India are out of school – surrounded by poverty, illness and despair; they are fighting a daily battle for their survival. Together, we can bring hope in their lives. Together, we can bring change and make it last.
+
+            </p>
+		</div>
+		<div id="two-column">
+			<div class="box-content">
+				<h2 class="title title01">Activities</h2>
+				
+                <div id="box_box" style="height:200; width:500; display:inline-block;">
+                	<div style=" float:left;margin-right: 20px;">
+                    	<img src="images/act01.jpg" height="150" width="150" /><br />
+                        Activity 1
+                    </div> &nbsp;&nbsp;&nbsp;
+                    <div  style=" float:left;margin-right: 20px;">
+                    	<img src="images/act02.jpg" height="150" width="150" /><br />
+                        Activity 2
+                    </div>&nbsp;&nbsp;&nbsp;
+                    <div  style=" float:left;">
+                    	<img src="images/act03.jpg" height="150" width="150" /><br />
+                        Activity 3
+                    </div>
+                 </div>
+                
+			</div>
+		</div>
+	</div>
+	<div id="sidebar">
+		<div id="sbox1">
+			<h2>Achievements</h2>
+			<ul class="list-style1">
+				<li class="first">
+					<p> <h3>Education: </h3><br />
+
+<ul><li>20,370 children directly provided education</li>
+<li>91% of the total eligible students mainstreamed</li>
+<li>Infrastructure support provided to 42 education centres in 13 states</li>
+
+</ul> 
+<h3>Health Care: </h3><br />
+<ul>
+ <li>Mobile Hospital programme benefitted 317,053 people directly</li>
+ <li>Women amounted to 54% of the beneficiaries</li>
+ <li>5027 children benefitted from School Health Programme</li>
+
+</ul>
+
+<h3>Livelihood:  </h3><br />
+<ul>
+ <li>More than 18,000 youth trained, and 12,000 placed so far</li>
+ <li>12 new centres added; 73.4% increase in enrolment</li>
+ <li>55% of the total beneficiaries were young women</li>
+
+</ul>
+
+</p>
+
+
+					
+				</li>
+			</ul>
+		</div>
+		
+		</div>
+	</div>
+</div>
+
+<div id="copyright" class="container">
+	<p>&copy; Umeed. All rights reserved. Design by Shikha and Sivani
+</div>
+
+</body>
+</html>

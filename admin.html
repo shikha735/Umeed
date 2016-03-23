@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Umeed</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="jquery_min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script type="text/javascript" src="valad.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="index.html">Umeed</a></h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="dropdown"><a href="#" accesskey="1"  class="dropbtn" title="">Login</a>
+            	<div class="dropdown-content">
+      				<a href="admin.html">Admin</a>
+      				<a href="coord.html">Coordinator</a>
+      				<a href="volunteer.html">Volunteer</a>
+    			</div>
+            </li>
+			<li class="dropdown"><a href="#" class="dropbtn" accesskey="2" title="">Registration</a>
+            	<div class="dropdown-content">
+      				<a href="radmin.html">Admin</a>
+      				<a href="rcoord.html">Coordinator</a>
+      				<a href="rvolunteer.html">Volunteer</a>
+    			</div>
+            
+            </li>
+			<li><a href="schools.html" accesskey="3" title="">Schools</a></li>
+			<li><a href="activities.html" accesskey="4" title="">Activities</a></li>
+            <li><a href="query.html" accesskey="3" title="">Query</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="page" class="container">
+	<div id="content">
+		<div id="onecolumn">
+			<h2>Admin login</h2>
+			<p></p>
+		</div><br />
+        <br />
+       <form action="admin_page" onsubmit="return validate()" method="post">
+		<table>
+ <td>ID No:</td>
+		<td><input type="text" name="idno"/></td>
+		</tr>
+ <tr>
+			<td>Password:</td>
+			<td><input type="password" name="pwd"/></td> 
+		</tr>
+		<tr> 
+			<td colspan="2"><input type="submit" name="sub" value="SUBMIT"/></td>
+		</tr>
+		</table>
+		</form>
+ </body> 
+        
+	</div>
+	
+</div>
+
+<div id="copyright" class="container">
+	<p>&copy; Umeed. All rights reserved. Design by Shikha and Sivani
+</div>
+
+</body>
+</html>
